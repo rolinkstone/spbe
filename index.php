@@ -450,11 +450,6 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
                         </div>
                         
                        
-                        <div class="tiny-slide">
-                            <a href="https://sippn.menpan.go.id/instansi/balai-besar-pom-di-palangkaraya-177702" target="_blank">
-                                <img src="images/clients/logo-cariyanlik.svg" href="" alt="" class="img-fluid">
-                            </a>
-                        </div>
                     </div>
                     <!--end client-slider-->
                 </div>
