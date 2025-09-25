@@ -318,11 +318,7 @@ include 'config.php';
                         </div>
                        
                        
-                        <div class="tiny-slide">
-                            <a href="https://sites.google.com/view/kearsipanbbpompky/daduk-2023" target="_blank">
-                                <img src="images/clients/asik.png" href="" alt="" class="img-fluid">
-                            </a>
-                        </div>
+                       
                         <div class="tiny-slide">
                             <a href="https://sippn.menpan.go.id/instansi/balai-besar-pom-di-palangkaraya-177702" target="_blank">
                                 <img src="images/clients/logo-cariyanlik.svg" href="" alt="" class="img-fluid">
