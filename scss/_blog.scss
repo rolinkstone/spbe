@@ -1,0 +1,48 @@
+// 
+// blog
+// 
+
+
+.blog-image {
+    border-radius: 10px;
+
+    img {
+        transition: all 1.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.blog-content {
+    a {
+        h6 {
+            color: rgba($muted, 0.9);
+            transition: all 0.5s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        h4 {
+            color: $dark;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.blog-link {
+    a {
+        color: $primary;
+        transition: all 0.3s;
+        &:hover {
+            color: $dark;
+        }
+    }
+}

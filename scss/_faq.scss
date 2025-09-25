@@ -1,0 +1,106 @@
+.faq {
+  position: relative;
+}
+
+.faq-collaps {
+  background-color: $white;
+
+  .card {
+    border: 1px solid $light;
+    border-radius: 0px;
+    background-color: transparent;
+    
+  }
+}
+
+  .accordion-item {
+    .accordion-header {
+      .accordion-button {
+        background-color: rgba(0, 176, 116, 0.1);
+      }
+    }
+  }
+
+  .faq-collaps-2 {
+    .card {
+      border-color: rgba($muted, 0.2);
+      border-radius: 6px;
+    }
+  }
+
+  .card-header {
+    background-color: transparent;
+    border-bottom: none;
+    margin-left: 30px;
+
+  }
+
+  a.faq[data-bs-toggle="collapse"].collapsed {
+    &:before {
+      content: "\F415";
+    }
+  }
+
+  a.faq[data-bs-toggle="collapse"] {
+    &:before {
+      content: "\F374";
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      background: $primary;
+      line-height: 22px;
+      display: block;
+      float: right;
+      font-family: "Material Design Icons";
+      font-size: 16px;
+      color: $white;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .custom-form-faq {
+    position: relative;
+
+    .form-control {
+      height: 44px;
+      font-size: 14px;
+      padding-left: 25px;
+      border-color: #e2e4e8;
+      color: $muted;
+    }
+
+    .form-control {
+      &:focus {
+        border-color: #e2e4e8;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+
+    .faq-icon {
+      position: absolute;
+      font-size: 18px;
+      right: 10px;
+      color: $muted;
+      margin-top: 40px;
+    }
+  
+  }
+  .card-body {
+    animation: sweep .5s ease-in-out;
+    border-left: 2px solid $primary;
+    margin-left: 55px;
+    opacity: 100;
+    padding-left: 25px;
+    margin-bottom: 15px;
+  }
+
+
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 55px}
+}

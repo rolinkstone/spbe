@@ -1,0 +1,67 @@
+// 
+// footer
+// 
+
+
+.footer {
+    .address-content {
+        p {
+            color: rgba($black, 0.6) !important;
+        }
+        a {
+            color: rgba($black, 0.6);
+            transition: all 0.2s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .social-icon {
+        i {
+            color: rgba($muted, 0.7);
+            transition: all 0.5s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .menu-item {
+        flex: 1 0 40%;
+        margin-bottom: 12px;
+        font-weight: 600;
+
+        a {
+            color: rgba($black, 0.6);
+            transition: all 0.4s;
+            font-size: 14px !important;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .info-item{
+        margin-bottom: 12px;
+        font-weight: 600;
+        a{
+            color: rgba($black, 0.6);
+            transition: all 0.4s;
+            font-size: 14px !important;
+            
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

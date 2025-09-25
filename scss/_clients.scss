@@ -1,0 +1,17 @@
+// 
+// clients
+// 
+
+.clients {
+    .tiny-slide {
+        opacity: 0.3;
+        transition: all 0.5s;
+        img{
+            width: 140px;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+   
+}

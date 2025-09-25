@@ -1,0 +1,179 @@
+// 
+// features
+// 
+
+
+// top
+
+#imgcontainer-1 {
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    perspective: 30px;
+    left: -50px;
+}
+
+
+#inner-2 {
+    transition: transform 0.5s;
+}
+
+.demo-img {
+    background-image: url(../images/features/home-animation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.sec-image {
+    img {
+        position: relative;
+        z-index: 999;
+    }
+}
+
+
+#sec-image:hover {
+    cursor: pointer;
+}
+
+.demo-overlay {
+    width: 100%;
+    padding: 16em 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.4s;
+}
+
+
+.youtube-icon {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+
+}
+
+.sec-image {
+    .bg-img {
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: all 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+
+
+// features-2
+
+.features-2{
+    padding: 150px 0 50px 0;
+}
+
+#imgcontainer-2 {
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    perspective: 30px;
+    left: -50px;
+}
+
+
+#inner-3 {
+    transition: transform 0.5s;
+}
+
+.demo-img-2 {
+    background-image: url(../images/features/home-animation-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.sec-image-2 {
+    img {
+        position: relative;
+        z-index: 999;
+    }
+}
+
+
+#sec-image-2:hover {
+    cursor: pointer;
+}
+
+.demo-overlay {
+    width: 100%;
+    padding: 16em 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.4s;
+}
+
+
+.youtube-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20px, -40px);
+    z-index: 999;
+}
+
+.sec-image {
+    .bg-img {
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: all 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+.modal {
+	.modal-dialog {
+		.btn-close {
+			width: 26px;
+			height: 26px;
+			background-color: $white;
+			border-radius: 5px;
+			position: absolute;
+			top: 20px;
+			right: 10px;
+			z-index: 3;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover {
+			.btn-close {
+				opacity: 0.5;
+			}
+		}
+	}
+}
+
+
+@media (max-width:992px) {
+    #imgcontainer, #imgcontainer-2{
+        left: 0;
+    }
+    .features-2{
+        padding: 80px 0 0px 0;
+    }
+
+    .demo-img, .demo-img-2{
+        display: block;
+    }
+}
+

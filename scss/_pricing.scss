@@ -1,0 +1,43 @@
+// 
+// pricing
+// 
+
+
+.pricing-box {
+
+    .price-title {
+        background: #d1d1d1;
+        padding: 6px 30px;
+        display: inline-block;
+        border-radius: 20px;
+        position: relative;
+        z-index: 999;
+
+        .tag {
+            transform: rotate(135deg) !important;
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            bottom: -8px;
+            left: 44%;
+            margin-top: -19px;
+            background: #d1d1d1;
+        }
+
+    }
+
+
+    .price-tag {
+        h2 {
+            span {
+                font-size: 60px;
+            }
+        }
+
+        sup {
+            top: -1.5em;
+            color: rgba($dark, 0.6);
+        }
+    }
+}

@@ -1,0 +1,131 @@
+// 
+// cta 
+// 
+
+.cta {
+    background-color: rgb(244, 244, 244);
+}
+
+#cta-ani {
+    position: relative;
+        width: 100%;
+        background-image: url(../images/cta/animation-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 50% 50%;
+  }
+
+
+.cta-image {
+    .bg-img {
+        img {
+            max-width: 100%;
+            height: auto;
+            transition: all 2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+
+
+// 
+// cta-2
+
+.cta-2 {
+    .cta-title {
+        color: rgba($dark, 0.6);
+        font-weight: 700;
+    }
+
+    .subscribe-form {
+        .input-group {
+            input {
+                padding: 20px 30px;
+                background-color: $light;
+
+                &:focus {
+                    border: 1px solid $primary;
+                }
+            }
+
+            .form-control {
+                border: none;
+            }
+
+            ::placeholder {
+                font-size: 15px;
+            }
+
+            button {
+                padding: 20px 50px;
+            }
+        }
+    }
+
+
+    #cta-footer {
+        position: relative;
+            width: 100%;
+            background-image: url(../images/cta/animation-image-2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: 50% 50%;
+      }
+    
+
+    .dot {
+        background-image: url(../images/cta/dot.png);
+        // background-size: cover;
+        background-repeat: no-repeat;
+        // padding: 30px 0;
+       
+    }
+    
+    .cta-image {
+        .bg-img {
+            img {
+                max-width: 100%;
+                height: auto;
+                transition: all 2s;
+    
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+    
+        }
+    }
+    
+
+}
+
+@media (max-width:992px) {
+    #imgcontainer-4, #imgcontainer-3{
+        left: 0;
+    }
+
+    .demo-overlay{
+        padding: 17em 0 !important;
+    }
+
+    .demo-img-3, .demo-img-4{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .demo-overlay{
+        padding: 12em 0 !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .demo-overlay{
+        padding: 10em 0 !important;
+    }
+}

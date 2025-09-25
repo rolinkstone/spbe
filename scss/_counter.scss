@@ -1,0 +1,35 @@
+// 
+// counter
+// 
+
+.counter{
+    .side-border-left::after{
+        content: "";
+        position: absolute;
+        border-left: 1px dashed rgba($muted, 0.2);
+        height: 400px;
+        top: 0;
+        left: 0;
+    }
+    
+    .side-border-right::before{
+        content: "";
+        position: absolute;
+        border-right: 1px dashed rgba($muted, 0.2);
+        height: 400px;
+        top: 0;
+        right: 0;
+    }
+
+    .counter_value{
+        font-size: 60px;
+    }
+    
+}
+
+@media (max-width:992px){
+    .side-border-left, .side-border-right{
+        display: none;
+    }
+}
+    

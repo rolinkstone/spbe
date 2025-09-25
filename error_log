@@ -1,0 +1,115 @@
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 8
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 11
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 13
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 14
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 21
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 22
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 24
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 25
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 26
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 28
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 29
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 30
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 32
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 33
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 34
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 38
+[27-Aug-2023 21:09:06 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe.bbpompky.id/index.php on line 38
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/bbps6532/public_html/spbe/index.php on line 8
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 11
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 13
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 14
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 21
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 22
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 24
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 25
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 26
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 28
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 29
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 30
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 32
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 33
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 34
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 38
+[08-Nov-2023 18:44:26 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 38
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/bbps6532/public_html/spbe/index.php on line 8
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 11
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 13
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 14
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 21
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 22
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 24
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 25
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 26
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 28
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 29
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 30
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 32
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 33
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 34
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/bbps6532/public_html/spbe/index.php on line 38
+[08-Nov-2023 18:44:27 Asia/Jakarta] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:06:55 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:06:55 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:06:55 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:06:55 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:10 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:10 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:10 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:10 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:11 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:12 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:14 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:14 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:14 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:14 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:15 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:16 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:17 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:18 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:18 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:18 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:18 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:07:20 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:07:20 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:07:20 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:07:20 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
+[23-Mar-2024 20:08:01 Asia/Jakarta] PHP Notice:  Undefined variable: bln in /home/bbps6532/public_html/spbe/index.php on line 36
+[23-Mar-2024 20:08:01 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 38
+[23-Mar-2024 20:08:01 Asia/Jakarta] PHP Notice:  Undefined variable: thn in /home/bbps6532/public_html/spbe/index.php on line 40
+[23-Mar-2024 20:08:01 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/bbps6532/public_html/spbe/index.php on line 42
