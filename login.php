@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 session_start();
 
-$konek = mysqli_connect('localhost', 'root', '', 'bbps6532_portal');
+$konek = mysqli_connect("localhost","bbps6532_spbe","tugaskitA1!","bbps6532_portal");
 if(!$konek){
     echo json_encode(['status'=>'error','msg'=>'Database error']);
     exit;

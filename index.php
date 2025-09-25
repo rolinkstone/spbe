@@ -6,7 +6,7 @@ $tanggal = date("Ymd"); // Dapatkan tanggal sekarang
 $waktu   = time(); // Dapatkan nilai waktu
 $bln = date("m");
 $thn = date("Y");
-$konek = mysqli_connect('localhost', 'root', '', 'bbps6532_portal');
+$konek = mysqli_connect("localhost","bbps6532_spbe","tugaskitA1!","bbps6532_portal");
 
 
 // Cek user yang mengakses berdasarkan IP-nya 
