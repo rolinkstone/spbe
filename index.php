@@ -376,8 +376,7 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
                             </a>
                         </div>
                        
-                    
-                        
+                                            
                         <div class="tiny-slide">
                             <a href="https://sites.google.com/view/sanprabu/beranda?authuser=0" target="_blank">
                                 <img src="images/clients/sangprabu.png" href="" alt="" class="img-fluid">
@@ -422,32 +421,35 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
                       
                       <div class="tiny-slide">
                         <a href="#" class="login-required" data-url="https://sites.google.com/view/monelaku">
-                            <img src="images/clients/monelaku.png" alt="Monelaku" class="img-fluid">
+                            <img src="images/clients/monelaku.png" alt="" class="img-fluid">
                         </a>
                         </div>
 
                             <div class="tiny-slide">
                         <a href="#" class="login-required" data-url="https://sites.google.com/view/qmsbbpomdipalangkaraya/halaman-muka?authuser=3">
-                            <img src="images/clients/QMS.png" alt="Monelaku" class="img-fluid">
+                            <img src="images/clients/QMS.png" alt="" class="img-fluid">
+                        </a>
+                        </div>
+
+                          <div class="tiny-slide">
+                        <a href="#" class="login-required" data-url="https://drive.google.com/drive/folders/1VDjkj5Xn7TxwfI251SJLzWVslhpSUBlL">
+                            <img src="images/clients/smap_new.png" alt="" class="img-fluid">
                         </a>
                         </div>
                      
-                     
-                        <div class="tiny-slide">
-                            <a href="https://drive.google.com/drive/folders/1VDjkj5Xn7TxwfI251SJLzWVslhpSUBlL" target="_blank">
-                                <img src="images/clients/smap_new.png" href="" alt="" class="img-fluid">
-                            </a>
-                        </div>
                          <div class="tiny-slide">
-                            <a href="https://sites.google.com/view/smmilpbbpompky/beranda" target="_blank">
-                                <img src="images/clients/smii.png" href="" alt="" class="img-fluid">
-                            </a>
+                        <a href="#" class="login-required" data-url="https://sites.google.com/view/smmilpbbpompky/beranda">
+                            <img src="images/clients/smii.png" alt="" class="img-fluid">
+                        </a>
                         </div>
-                        <div class="tiny-slide">
-                            <a href="https://sites.google.com/view/kearsipanbbpompky/daduk-2023" target="_blank">
-                                <img src="images/clients/asik.png" href="" alt="" class="img-fluid">
-                            </a>
+
+                         <div class="tiny-slide">
+                        <a href="#" class="login-required" data-url="https://sites.google.com/view/kearsipanbbpompky/daduk-2023">
+                            <img src="images/clients/asik.png" alt="" class="img-fluid">
+                        </a>
                         </div>
+                        
+                       
                         <div class="tiny-slide">
                             <a href="https://sippn.menpan.go.id/instansi/balai-besar-pom-di-palangkaraya-177702" target="_blank">
                                 <img src="images/clients/logo-cariyanlik.svg" href="" alt="" class="img-fluid">
