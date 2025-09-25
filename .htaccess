@@ -1,6 +1,44 @@
-RewriteEngine on
+# --------------------------------------------------------
+# SPBE Portal - .htaccess Final
+# --------------------------------------------------------
+
+# Aktifkan mod_rewrite
+RewriteEngine On
+
+# --------------------------------------------------------
+# Proteksi file sensitif → tampilkan 404
+# --------------------------------------------------------
+RewriteRule ^(config|database|login|\.env|\.ht)$ /spbe/404.php [L]
+
+# --------------------------------------------------------
+# Rewrite URL friendly
+# Misal: domain.com/layanan → domain.com/layanan.php
+# --------------------------------------------------------
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z]+)\/?$ $1.php [NC]
+RewriteRule ^([a-z0-9-]+)\/?$ $1.php [NC,L]
 
-Options All -Indexes
+# --------------------------------------------------------
+# Nonaktifkan directory listing
+# --------------------------------------------------------
+Options -Indexes
+
+# --------------------------------------------------------
+# Header keamanan dasar
+# --------------------------------------------------------
+# Cegah clickjacking
+Header always append X-Frame-Options SAMEORIGIN
+
+# Cegah MIME type sniffing
+Header set X-Content-Type-Options nosniff
+
+# Aktifkan HSTS (HTTPS wajib) – hanya jika pakai HTTPS
+#Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Cegah akses dari browser lama untuk XSS
+Header set X-XSS-Protection "1; mode=block"
+
+# --------------------------------------------------------
+# Custom 404
+# --------------------------------------------------------
+ErrorDocument 404 /spbe/404.php

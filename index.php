@@ -1,83 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php
-$ip      = $_SERVER['REMOTE_ADDR']; // Dapatkan IP user
-$tanggal = date("Ymd"); // Dapatkan tanggal sekarang
-$waktu   = time(); // Dapatkan nilai waktu
-$bln = date("m");
-$thn = date("Y");
-$konek = mysqli_connect("localhost","bbps6532_spbe","tugaskitA1!","bbps6532_portal");
-
-
-// Cek user yang mengakses berdasarkan IP-nya 
-$s = mysqli_query($konek, "SELECT * FROM statistik WHERE ip='$ip' AND tanggal='$tanggal'");
-// Kalau belum ada, simpan datanya sebagai user baru
-if(mysqli_num_rows($s) == 0){
-  mysqli_query($konek, "INSERT INTO statistik(ip, tanggal, hits, online) VALUES('$ip', '$tanggal', '1', '$waktu')");
-}
-// Kalau sudah ada, update data hits user  
-else{
-  mysqli_query($konek, "UPDATE statistik SET hits=hits+1, online='$waktu' WHERE ip='$ip' AND tanggal='$tanggal'");
-}
-
-$query1 = mysqli_query($konek, "SELECT ip FROM statistik WHERE tanggal='$tanggal' GROUP BY ip");
-$pengunjung = mysqli_num_rows($query1);
-
-
-$query2        = mysqli_query($konek, "SELECT COUNT(hits) as total FROM statistik");
-$hasil2        = mysqli_fetch_array($query2);
-$totpengunjung = $hasil2['total'];
-
-$query3 = mysqli_query($konek, "SELECT SUM(hits) as jumlah FROM statistik WHERE tanggal='$tanggal' GROUP BY tanggal");
-$hasil3 = mysqli_fetch_array($query3);
-$hits   = $hasil3['jumlah'];
-
-$query4  = mysqli_query($konek, "SELECT SUM(hits) as total FROM statistik");
-$hasil4  = mysqli_fetch_array($query4);
-$tothits = $hasil4['total'];  
-
-$query5  = mysqli_query($konek, "SELECT count(hits) as total FROM statistik WHERE MONTH(tanggal) = '$bln' GROUP BY YEAR (tanggal)") ;
-$hasil5  = mysqli_fetch_array($query5);
-$totmonth = $hasil5['total'];  
-
-$today = date('Y-m-d');       // Tanggal hari ini
-$thisYear = date('Y');        // Tahun sekarang
-$lastYear = $thisYear - 1;    // Tahun lalu
-
-// Total pengunjung tahun ini (sampai hari ini)
-$queryThisYear = mysqli_query($konek, "
-    SELECT COUNT(ip) as total 
-    FROM statistik 
-    WHERE YEAR(tanggal) = '$thisYear' 
-      AND tanggal <= '$today'
-");
-$pengunjungThisYear = mysqli_fetch_array($queryThisYear)['total'];
-
-// Total pengunjung tahun lalu (sampai tanggal yang sama)
-$queryLastYear = mysqli_query($konek, "
-    SELECT COUNT(ip) as total 
-    FROM statistik 
-    WHERE YEAR(tanggal) = '$lastYear' 
-      AND tanggal <= DATE_SUB('$today', INTERVAL 1 YEAR)
-");
-$pengunjungLastYear = mysqli_fetch_array($queryLastYear)['total'];
-
-
-
-// Cek berapa pengunjung yang sedang online
-$bataswaktu       = time() - 300; 
-$pengunjungonline = mysqli_num_rows(mysqli_query($konek, "SELECT * FROM statistik WHERE online > '$bataswaktu'"));
-
-// Angka total pengunjung dalam bentuk gambar
-$folder = "counter"; // nama folder
-$ext    = ".png";     // ekstension file gambar
-
-// ubah digit angka menjadi enam digit
-$totpengunjunggbr = sprintf("%06d", $totpengunjung);
-// ganti angka teks dengan angka gambar
-
-
-?> 
+include 'config.php';
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -104,6 +27,8 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
     <link href="css/style.css" rel="stylesheet">
 
 </head>
+
+
 <!-- Modal Login -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -117,12 +42,13 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
         <form id="loginForm">
           <div class="mb-3">
             <label class="form-label">Username</label>
-            <input type="text" name="username" id="username" class="form-control" required>
+            <input type="text" name="username" class="form-control" required>
           </div>
           <div class="mb-3">
             <label class="form-label">Password</label>
-            <input type="password" name="password" id="password" class="form-control" required>
+            <input type="password" name="password" class="form-control" required>
           </div>
+          <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
           <input type="hidden" name="redirect" id="redirect-url">
           <button type="submit" class="btn btn-primary w-100">Login</button>
         </form>
@@ -169,7 +95,10 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
                         <a href="index" class="nav-link ">Beranda</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
-                        <a href="#layanan" class="nav-link ">Layanan</a>
+                        <a href="#layananeksternal" class="nav-link ">Layanan Publik</a>
+                    </li>
+                     <li class="nav-item dropdown dropdown-hover">
+                        <a href="#layananinternal" class="nav-link ">Layanan Internal</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
                         <a href="#inovasi" class="nav-link ">Inovasi</a>
@@ -765,6 +694,8 @@ $totpengunjunggbr = sprintf("%06d", $totpengunjung);
     <!-- Custom -->
     <script src="js/app.js"></script>
 
+<script src="js/bootstrap.bundle.min.js"></script>
+
 <script>
 document.querySelectorAll('.login-required').forEach(link => {
   link.addEventListener('click', function(e){
@@ -772,7 +703,6 @@ document.querySelectorAll('.login-required').forEach(link => {
     const targetUrl = this.getAttribute('data-url');
     document.getElementById('redirect-url').value = targetUrl;
     document.getElementById('loginError').style.display = 'none';
-    document.getElementById('loginError').innerText = '';
     document.getElementById('loginForm').reset();
     new bootstrap.Modal(document.getElementById('loginModal')).show();
   });
@@ -781,6 +711,7 @@ document.querySelectorAll('.login-required').forEach(link => {
 document.getElementById('loginForm').addEventListener('submit', function(e){
   e.preventDefault();
   const formData = new FormData(this);
+  console.log([...formData]); // Debug: lihat data yang dikirim
 
   fetch('login.php', {
     method: 'POST',
