@@ -3,10 +3,28 @@ header('Content-Type: application/json; charset=UTF-8');
 
 $url = "https://palangkaraya.pom.go.id/berita";
 
+// Fungsi ambil HTML pakai cURL
+function get_web_content($url) {
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // kalau sertifikat SSL bermasalah
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; MyScraper/1.0)");
+    $result = curl_exec($ch);
+    $err = curl_error($ch);
+    curl_close($ch);
+
+    if ($result === false || empty($result)) {
+        return ["error" => "Gagal mengambil halaman: $err"];
+    }
+    return $result;
+}
+
 // Ambil HTML
-$html = file_get_contents($url);
-if ($html === false) {
-    echo json_encode(["error" => "Gagal mengambil halaman"], JSON_PRETTY_PRINT);
+$html = get_web_content($url);
+if (is_array($html) && isset($html['error'])) {
+    echo json_encode($html, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     exit;
 }
 
