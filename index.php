@@ -102,7 +102,7 @@ include 'config.php';
                         <a href="#layananinternal" class="nav-link ">Layanan Internal</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
-                        <a href="#inovasi" class="nav-link ">Inovasi</a>
+                        <a href="#berita" class="nav-link ">Berita</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
                         <a href="#pengunjung" class="nav-link ">Pengunjung</a>
