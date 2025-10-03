@@ -391,7 +391,7 @@ include 'config.php';
     <!-- start blog -->
    <?php
 // ambil JSON dari scrape-berita.php
-$json = file_get_contents("http://localhost/spbe/scrape-berita.php");
+$json = file_get_contents("https://bbpompky.id/spbe/scrape-berita.php");
 $berita = json_decode($json, true);
 ?>
 <!DOCTYPE html>
