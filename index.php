@@ -1,4 +1,5 @@
 <?php
+
 include 'config.php';
 ?>
 <head>
@@ -386,121 +387,60 @@ include 'config.php';
   
 
 
-    <!-- start blog -->
-    <section class="section bg-light" id="inovasi">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="text-center">
-                      
-                        <h2 class="mb-3">Inovasi <span class="text-primary fw-normal">Balai </span>Besar POM di Palangka Raya</h2>
-                        
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/1111.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content mb-2">
-                       
-                        <a href="">
-                            <h4>Manajemen Perubahan</h4>
-                        </a>
-                    </div>
-                 
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/2222.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content mb-2">
-                        
-                        <a href="">
-                            <h4>Penataan Tata Laksana</h4>
-                        </a>
-                    </div>
-                    
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6  mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/3333.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content">
-                       
-                        <a href="">
-                            <h4 class="mt-3 fw-bold">Penataan SDM</h4>
-                        </a>
-                    </div>
-                    
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
+    <!-- start blog -->
+   <?php
+// ambil JSON dari scrape-berita.php
+$json = file_get_contents("http://localhost/spbe/scrape-berita.php");
+$berita = json_decode($json, true);
+?>
+<!DOCTYPE html>
+<html lang="id">
+
+<body>
+
+<section class="section bg-light" id="berita">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="text-center">
+                    <h2 class="mb-3">Berita <span class="text-primary fw-normal">BBPOM</span> Palangka Raya</h2>
                 </div>
             </div>
-            <!-- end row 1-->
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/4444.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content mb-2">
-                        
-                        <a href="">
-                            <h4>Penguatan Akuntabilitas</h4>
-                        </a>
-                    </div>
-                    
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/5555.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content mb-2">
-                       
-                        <a href="">
-                            <h4>Pengawasan</h4>
-                        </a>
-                    </div>
-                  
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6  mt-4 mt-2">
-                    <div class="blog-image overflow-hidden">
-                        <img src="images/blog/6666.png" alt="" class="img-fluid w-100">
-                    </div>
-                    <div class="blog-content">
-                        
-                        <a href="">
-                            <h4 class="mt-3 fw-bold">Peningkatan Kualitas Pelayanan Publik</h4>
-                        </a>
-                    </div>
-                  
-                    <div class="blog-link">
-                        <a href="" class="fw-bold f-14">Pelajari Lebih Lanjut <i class="mdi mdi-arrow-right align-middle"></i></a>
-                    </div>
-                </div>
-            </div>
-                <!-- end row 2 -->
-            
         </div>
-    </section>
+
+        <div class="row mt-5">
+            <?php if (!empty($berita)) : ?>
+                <?php foreach ($berita as $b) : ?>
+                    <div class="col-lg-4 col-md-6 mt-4 mt-2">
+                        <div class="blog-image overflow-hidden">
+                            <img src="<?= htmlspecialchars($b['gambar']) ?>" 
+                                 alt="gambar berita" 
+                                 class="img-fluid w-100">
+                        </div>
+                        <div class="blog-content mb-2">
+                            <a href="<?= htmlspecialchars($b['link']) ?>" target="_blank">
+                                <h4><?= htmlspecialchars($b['judul']) ?></h4>
+                            </a>
+                            <p><?= htmlspecialchars($b['ringkasan'] ?? '') ?></p>
+                        </div>
+                        <div class="blog-link">
+                            <a href="<?= htmlspecialchars($b['link']) ?>" target="_blank" class="fw-bold f-14">
+                                Baca Selengkapnya 
+                                <i class="mdi mdi-arrow-right align-middle"></i>
+                            </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <p class="text-center">Tidak ada berita.</p>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
     <!-- end blog -->
 
-  
+
 
     <!-- counter section-->
     <section class="counter ">
@@ -738,3 +678,4 @@ document.getElementById('loginForm').addEventListener('submit', function(e){
 </body>
 
 </html>
+

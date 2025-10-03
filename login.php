@@ -1,6 +1,8 @@
 <?php
 session_start();
-header('Content-Type: application/json');
+if (!headers_sent()) {
+    header('Content-Type: application/json; charset=UTF-8');
+}
 
 // Buat CSRF token jika belum ada
 if(empty($_SESSION['csrf_token'])){
